@@ -2,37 +2,89 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ddf0e1;
+  background-color: #0d0e0d;
 }
 
+.name-navbar{
+  color: hsl(180, 10%, 94%);
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+/* Estilos generales del Navbar */
 .navbar {
-  background-color: #061309;
-  padding: 1px;
-  position: sticky;
-  top: 0;
+  background-color: #080808;
+  padding: 5px;
+  position: relative;
 }
 
-.navbar ul {
-  list-style: none;
+.navbar-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-.navbar li {
-  margin: 0;
-  background-color: rgb(224, 233, 224);
+.nav-links {
+  list-style: none;
+  display: flex;
 }
 
-.navbar a {
-  color: rgb(10, 24, 14);
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: rgb(24, 18, 18);
   text-decoration: none;
-  padding: 5px;
-  font-size: 18px;
-  font-weight: 600;
 }
 
-.navbar a:hover {
-  background-color: #bfd3c2;
+.nav-links a:hover {
+  background-color: #575757;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Estilos del menú hamburguesa */
+.menu-toggle {
+  display: none; /* Ocultamos el ícono en pantallas grandes */
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.bar {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+}
+
+/* En pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px; /* Alineamos el menú debajo del navbar */
+    right: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #333;
+    transition: height 0.3s ease; /* Transición para mostrar/ocultar el menú */
+  }
+
+  .nav-links.active {
+    height: 200px; /* Altura del menú cuando está abierto */
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: flex; /* Mostramos el ícono en pantallas pequeñas */
+  }
 }
 
 section {
@@ -41,7 +93,7 @@ section {
 }
 
 .home-page {
-  background-color: #a0d3a3;
+  background-color: #011105;
   text-align: center;
 }
 .about-page {
@@ -95,4 +147,8 @@ ul li {
 .fotoperfil{
   width: 40%;
   height: 40%;
+}
+
+p{
+  color: #d2e7d2;
 }
