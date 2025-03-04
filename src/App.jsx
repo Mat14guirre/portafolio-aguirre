@@ -1,17 +1,20 @@
+import React from "react";
 import "./App.css";
-import Navbar from "./components/navbar/navbar.jsx";
+import Navbar from './components/Navbar';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ProjectsPage from './pages/ProjectsPage.jsx';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Navbar />
-
-      <div>
-        <h1>Portafolio</h1>
-        <h2>Matias Aguirre</h2>
-        <h3>Desarrollador full stack</h3>
-      </div>
-    </>
+      <HomePage />
+      <AboutPage />
+      <ProjectsPage />
+      <ContactPage />
+    </div>
   );
 }
 
