@@ -16,30 +16,30 @@ const AboutPage = () => {
             y a lo largo del tiempo, fui incorporando tecnologías avanzadas
             tanto en el front-end como en el back-end, lo que me permite
             desarrollar soluciones completas y funcionales. Mi recorrido en el
-            desarrollo: <br /> <br />✅ Desarrollo Web Aprendí los fundamentos
+            desarrollo: <br /> <br />✅ Desarrollo Web: Aprendí los fundamentos
             de HTML y CSS, incorporando preprocesadores como Sass para mejorar
             la modularidad y el mantenimiento del código. También me familiaricé
             con Bootstrap para agilizar el diseño responsivo y mejorar la
             experiencia del usuario. Además, trabajé con Figma para estructurar
             y diseñar interfaces atractivas y funcionales. <br /> <br /> ✅
-            JavaScript y Programación Orientada a Objetos Para fortalecer mi
+            JavaScript y Programación orientada a objetos: Para fortalecer mi
             lógica de programación, profundicé en JavaScript y su enfoque
             orientado a objetos. Esto me permitió comprender conceptos clave
             como clases, herencia, asincronía y manipulación del DOM, esenciales
             para el desarrollo de aplicaciones interactivas. <br /> <br />✅
-            React + Vite | Aplicaciones Web Modernas Di el siguiente paso
+            React + Vite | Aplicaciones Web Modernas: Di el siguiente paso
             aprendiendo React.js junto con Vite, optimizando el rendimiento y la
             organización del código. Desarrollé un e-commerce completo, donde
             apliqué componentización, hooks, context API y rutas dinámicas con
             React Router. También trabajé con Firebase para la gestión de datos
-            en tiempo real. <br /> <br />✅ Backend con Node.js y Express Para
+            en tiempo real. <br /> <br />✅ Backend con Node.js y Express: Para
             completar mi perfil como Full Stack, me adentré en el mundo del
             backend utilizando Node.js y Express.js. Aprendí a estructurar
             servidores, manejar peticiones HTTP, crear APIs RESTful y gestionar
             bases de datos con MongoDB y Mongoose. Además, trabajé con
             autenticación JWT, middleware y despliegue de servidores en
             plataformas como Render y Railway. <br /> <br />
-            Tecnologías que manejo <br />
+            Tecnologías que manejo:<br />
             💻 Front-End: HTML5, CSS3, Sass, Bootstrap, JavaScript (ES6+),
             React.js, Vite, Figma <br />
             ⚙️ Back-End: Node.js, Express.js, APIs RESTful, Autenticación JWT{" "}
