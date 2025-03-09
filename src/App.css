@@ -2,11 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0d0e0d;
+  background-image: url('/fondo-portafolio-paisaje.webp');
+  
+  
 }
 
 .name-navbar{
-  color: hsl(120, 6%, 94%);
+  color: hsl(290, 5%, 55%);
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -25,7 +27,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 2px;
-  background: linear-gradient(to right, #262b27, #869b85);
+  background: linear-gradient(to right, #060216, #464d48);
 }
 
 .nav-links {
@@ -36,7 +38,7 @@ body {
 .nav-links li {
   padding: 5px;
   margin: 5px;
-  background-color: rgb(55, 61, 61);
+  background-color: rgb(97, 83, 96);
   border: 1px solid white;
 }
 
@@ -50,20 +52,25 @@ body {
   background: linear-gradient(to right, #5a2b58, #b3b7bd);
   color: aliceblue;
   border-radius: 4px;
+
 }
 
 section {
   padding: 20px;
   margin: 20px;
+  
 }
 
 .home-page {
-  background-color: #191d1a;
   text-align: center;
 }
+.title-home{
+  color: #0d0a1a;
+  font-size: 25px;
+  font-weight: 600;
+}
 .about-page {
-  background-color: #191d1a;
-  padding: 20px;
+  padding: 10px;
 }
 
 .about-content {
@@ -73,29 +80,25 @@ section {
 }
 
 .fotoperfil {
-  width: 150px; 
-  height: 150px;
+  width: 30%;
+  height: 30%;
   border-radius: 50%; 
   object-fit: cover; 
 }
 
 .about-text h2 {
   margin: 0;
-  font-size: 24px;
+  font-size: 25px;
+  color: #7b74a0;
 }
 
 .about-text p {
   font-size: 16px;
-  color: #555;
-}
-
-
-.projects-page, .contact-page {
-  background-color: #191d1a;
+  color: #f7f1f1;
 }
 
 .welcome-text{
-  font-size: 60px;
+  font-size: 50px;
   color: rgb(235, 235, 245);
 }
 
@@ -111,18 +114,108 @@ ul li {
   border-radius: 5px;
 }
 
-.fotoperfil{
-  width: 40%;
-  height: 40%;
-}
-
 p{
   color: #d2e7d2;
   font-size: 20px;
 }
 h2 {
   font-size: 30px;
+  color: #c9c2c2;
 }
+.projects-page{
+  background: linear-gradient(to right, #060216, #464d48);
+  border: 2px solid rgb(185, 180, 185);
+  border-radius: 15px;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  
+}
+
+.project-image {
+  width: 100%; 
+  max-width: 500px; 
+  height: auto; 
+  border-radius: 10px; 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-image:hover {
+  transform: scale(1.20); /* Efecto de zoom */
+  box-shadow: 0 10px 15px rgba(226, 222, 222, 0.2);
+}
+.contact-page{
+  background: linear-gradient(to right, #060216, #464d48);
+  border: 2px solid rgb(185, 180, 185);
+  border-radius: 15px;
+}
+.tech-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tech-icons .icon {
+  font-size: 2rem; /* Tamaño de los íconos */
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-icons .icon:hover {
+  transform: scale(1.8); /* Efecto de agrandado al pasar el mouse */
+}
+
+.icon.html {
+  color: #e44d26;
+}
+
+.icon.css {
+  color: #1572b6;
+}
+
+.icon.js {
+  color: #f7df1e;
+}
+
+.icon.react {
+  color: #61dafb;
+}
+
+.icon.node {
+  color: #68a063;
+}
+
+.icon.mongo {
+  color: #4db33d;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.contact-icons .icon {
+  font-size: 2rem;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-icons .icon:hover {
+  transform: scale(1.2);
+}
+
+.icon.whatsapp {
+  color: #25d366;
+}
+
+.icon.email {
+  color: #d14836;
+}
+
 
 
 
@@ -180,5 +273,21 @@ h2 {
   .welcome-text{
     font-size: 30px;
     color: rgb(226, 218, 218);
+  }
+
+  .about-content {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .fotoperfil{
+    width: 100%;
+    height: 100%;
+  }
+
+  .title-home{
+    color: #645f77;
+    font-size: 20px;
+    font-weight: 300;
   }
 }

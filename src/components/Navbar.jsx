@@ -10,13 +10,14 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
+      <h1 className='name-navbar'>Matias Ezequiel Aguirre</h1>
         {/* Ícono del menú hamburguesa */}
         <div className="menu-toggle" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
         </div>
-        <h1 className='name-navbar'>Matias Ezequiel Aguirre</h1>
+        
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
           <li><a href="#home">Inicio</a></li>
           <li><a href="#about">Sobre mi</a></li>

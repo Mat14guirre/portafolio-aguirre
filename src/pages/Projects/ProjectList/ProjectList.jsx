@@ -2,16 +2,16 @@ import React from 'react';
 
 const projects = [
   {
-    image: '/images/ecommerce.jpg',
-    repoLink: 'https://github.com/usuario/ecommerce-app',
+    image: '/fusion-cap.png',
+    repoLink: 'https://github.com/Mat14guirre/Fusion-instalaciones',
   },
   {
-    image: '/images/blog.jpg',
-    repoLink: 'https://github.com/usuario/blog-app',
+    image: '/mi-iphone-cap.png',
+    repoLink: 'https://github.com/Mat14guirre/mi-Iphone',
   },
   {
-    image: '/images/social.jpg',
-    repoLink: 'https://github.com/usuario/social-media-platform',
+    image: '/catalina-cap.png',
+    repoLink: 'https://github.com/Mat14guirre/Catalinda-ind',
   },
 ];
 
