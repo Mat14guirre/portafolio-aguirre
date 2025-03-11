@@ -1,13 +1,15 @@
 import React from "react";
-import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const ContactPage = () => {
   return (
     <section id="contact" className="contact-page">
       <h2>Contacto</h2>
       <p>
-        Si desea ponerse en contacto, no dude en enviarme un mensaje por WhatsApp o un correo electrónico.
+        Si desea ponerse en contacto, no dude en enviarme un mensaje por
+        WhatsApp, correo electrónico o a través de mis redes profesionales.
       </p>
+
       <div className="contact-icons">
         {/* Botón de WhatsApp */}
         <a
@@ -30,9 +32,31 @@ const ContactPage = () => {
         >
           <FaEnvelope />
         </a>
+
+        {/* Botón de GitHub */}
+        <a
+          href="https://github.com/Mat14guirre"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="icon github"
+          title="GitHub"
+        >
+          <FaGithub />
+        </a>
+
+        {/* Botón de LinkedIn */}
+        <a
+          href="https://www.linkedin.com/in/mati-aguirre"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="icon linkedin"
+          title="LinkedIn"
+        >
+          <FaLinkedin />
+        </a>
       </div>
     </section>
   );
 };
 
-export default ContactPage;
+export default ContactPage
