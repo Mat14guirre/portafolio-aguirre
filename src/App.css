@@ -3,8 +3,10 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('/fondo-portafolio-paisaje.webp');
-  
-  
+}
+
+a{
+  text-decoration: none;
 }
 
 .name-navbar{
@@ -216,8 +218,26 @@ h2 {
   color: #d14836;
 }
 
+.btn-download {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #053261, #0056b3);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+}
 
-
+.btn-download:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 
 /* En pantallas pequeñas */

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiMongodb, SiJavascript } from "react-icons/si";
+import DownloadCV from "../components/DownloadCv.jsx";
 
 const AboutPage = () => {
   return (
@@ -39,18 +40,21 @@ const AboutPage = () => {
             bases de datos con MongoDB y Mongoose. Además, trabajé con
             autenticación JWT, middleware y despliegue de servidores en
             plataformas como Render y Railway. <br /> <br />
-            Tecnologías que manejo:<br />
+            Tecnologías que manejo:
+            <br />
             💻 Front-End: HTML5, CSS3, Sass, Bootstrap, JavaScript (ES6+),
             React.js, Vite, Figma <br />
             ⚙️ Back-End: Node.js, Express.js, APIs RESTful, Autenticación JWT{" "}
             <br /> 🗄 Bases de Datos: MongoDB, Mongoose, Firebase <br />
             🚀 Herramientas y Metodologías: Git, GitHub, Postman, Deploy en
-            Vercel/Render/Railway <br /><br />Mi enfoque se basa en la escalabilidad, buenas
-            prácticas y rendimiento para ofrecer soluciones eficientes y
-            adaptables a cada necesidad. Siempre busco aprender nuevas
-            tecnologías y mejorar mis habilidades para seguir creciendo en el
-            mundo del desarrollo. Si quieres conocer más sobre mi trabajo, ¡te
-            invito a explorar mis proyectos!
+            Vercel/Render/Railway <br />
+            <br />
+            Mi enfoque se basa en la escalabilidad, buenas prácticas y
+            rendimiento para ofrecer soluciones eficientes y adaptables a cada
+            necesidad. Siempre busco aprender nuevas tecnologías y mejorar mis
+            habilidades para seguir creciendo en el mundo del desarrollo. Si
+            quieres conocer más sobre mi trabajo, ¡te invito a explorar mis
+            proyectos! 
           </p>
           <div className="tech-icons">
             <FaHtml5 className="icon html" title="HTML5" />
@@ -60,6 +64,7 @@ const AboutPage = () => {
             <FaNodeJs className="icon node" title="Node.js" />
             <SiMongodb className="icon mongo" title="MongoDB" />
           </div>
+          <DownloadCV />
         </div>
       </div>
     </section>
