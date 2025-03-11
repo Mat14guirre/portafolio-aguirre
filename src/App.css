@@ -197,26 +197,24 @@ h2 {
 .contact-icons {
   display: flex;
   gap: 15px;
-  margin-top: 10px;
+  justify-content: center;
+  margin-top: 15px;
 }
 
-.contact-icons .icon {
-  font-size: 2rem;
-  text-decoration: none;
-  transition: transform 0.3s ease-in-out;
+.icon {
+  font-size: 30px;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.contact-icons .icon:hover {
+.icon:hover {
   transform: scale(1.2);
 }
 
-.icon.whatsapp {
-  color: #25d366;
-}
-
-.icon.email {
-  color: #d14836;
-}
+.whatsapp { color: #25d366; }
+.email { color: #c71610; }
+.github { color: #000; }
+.linkedin { color: #0077b5; }
 
 .btn-download {
   margin: 20px;
