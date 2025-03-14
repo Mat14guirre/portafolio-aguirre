@@ -2,7 +2,15 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('/fondo-portafolio-paisaje.webp');
+  
+}
+#tsparticles {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Hace que las partículas estén en el fondo */
 }
 
 a{
@@ -29,7 +37,7 @@ a{
   justify-content: space-around;
   align-items: center;
   margin: 2px;
-  background: linear-gradient(to right, #060216, #464d48);
+  background: linear-gradient(to right, #0c013a, #062b10);
 }
 
 .nav-links {
@@ -40,7 +48,7 @@ a{
 .nav-links li {
   padding: 5px;
   margin: 5px;
-  background-color: rgb(97, 83, 96);
+  background-color: rgb(11, 5, 65);
   border: 1px solid white;
 }
 
@@ -51,8 +59,10 @@ a{
 }
 
 .nav-links a:hover {
-  background: linear-gradient(to right, #5a2b58, #b3b7bd);
+  background: linear-gradient(to right, #380bb3, #b3b7bd);
   color: aliceblue;
+  font-size: 30px;
+  padding: 10px;
   border-radius: 4px;
 
 }
@@ -67,9 +77,13 @@ section {
   text-align: center;
 }
 .title-home{
-  color: #0d0a1a;
+  color: #bcc0bd;
   font-size: 25px;
   font-weight: 600;
+  background-color: #133d5f;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
 }
 .about-page {
   padding: 10px;
