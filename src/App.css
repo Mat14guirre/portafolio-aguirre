@@ -37,7 +37,7 @@ a{
   justify-content: space-around;
   align-items: center;
   margin: 2px;
-  background: linear-gradient(to right, #0c013a, #062b10);
+  background: linear-gradient(to right, #050111, #294591);
 }
 
 .nav-links {
@@ -59,10 +59,8 @@ a{
 }
 
 .nav-links a:hover {
-  background: linear-gradient(to right, #380bb3, #b3b7bd);
+  background: linear-gradient(to right, #034969, #b3b7bd);
   color: aliceblue;
-  font-size: 30px;
-  padding: 10px;
   border-radius: 4px;
 
 }
@@ -84,7 +82,27 @@ section {
   padding: 5px;
   border-radius: 5px;
   display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black; /* Simula el cursor */
+  width: 0;
+  animation: typing 5s steps(30, end) forwards, blinkCursor 0.9s infinite;
 }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes blinkCursor {
+  90% {
+    border-color: transparent;
+  }
+}
+
 .about-page {
   padding: 10px;
 }
@@ -100,6 +118,19 @@ section {
   height: 30%;
   border-radius: 50%; 
   object-fit: cover; 
+  opacity: 0;
+  transform: translateY(90px);
+  animation: fadeInUp 3s ease-out forwards;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .about-text h2 {
@@ -116,6 +147,19 @@ section {
 .welcome-text{
   font-size: 50px;
   color: rgb(235, 235, 245);
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeInMove 2s ease-out forwards;
+}
+@keyframes fadeInMove {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 ul {
@@ -139,7 +183,7 @@ h2 {
   color: #c9c2c2;
 }
 .projects-page{
-  background: linear-gradient(to right, #060216, #464d48);
+  background: linear-gradient(to right, #0949a8, #8dbbda);
   border: 2px solid rgb(185, 180, 185);
   border-radius: 15px;
 }
@@ -165,7 +209,7 @@ h2 {
   box-shadow: 0 10px 15px rgba(226, 222, 222, 0.2);
 }
 .contact-page{
-  background: linear-gradient(to right, #060216, #464d48);
+  background: linear-gradient(to right, #0949a8, #8dbbda);
   border: 2px solid rgb(185, 180, 185);
   border-radius: 15px;
 }

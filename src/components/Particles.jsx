@@ -12,13 +12,13 @@ const ParticlesBackground = () => {
       id="tsparticles"
       init={particlesInit}
       options={{
-        background: { color: "124" },
+        background: { color: "149" },
         particles: {
           number: { value: 50 },
           shape: { type: "circle" },
-          opacity: { value: 0.5 },
-          size: { value: 2 },
-          move: { enable: true, speed: 3 },
+          opacity: { value: 0.02 },
+          size: { value: 100 },
+          move: { enable: true, speed: 1 },
         },
       }}
     />
