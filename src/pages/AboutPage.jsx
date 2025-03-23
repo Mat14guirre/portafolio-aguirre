@@ -6,8 +6,9 @@ import DownloadCV from "../components/DownloadCv.jsx";
 const AboutPage = () => {
   return (
     <section id="about" className="about-page">
+      
       <div className="about-content">
-        <img src="/matiaguirreperfil.jpg" alt="Matias" className="fotoperfil" />
+      <img src="/matiaguirreperfil.jpg" alt="Matias" className="fotoperfil" />
         <div className="about-text">
           <h2>Sobre mí</h2>
           <p className="text-sobre-mi">
