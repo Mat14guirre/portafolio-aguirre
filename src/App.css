@@ -94,7 +94,7 @@ section {
     width: 0;
   }
   to {
-    width: 25%;
+    width: 30%;
   }
 }
 
@@ -147,21 +147,9 @@ section {
 }
 
 .welcome-text{
-  font-size: 50px;
-  color: rgb(235, 235, 245);
-  opacity: 0;
-  transform: translateY(-30px);
-  animation: fadeInMove 2s ease-out forwards;
-}
-@keyframes fadeInMove {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  font-size: 40px;
+  color: rgb(9, 8, 68);
+
 }
 
 ul {
@@ -300,7 +288,6 @@ h2 {
 
 .text-sobre-mi{
   padding: 20px;
-  margin: 20px;
   background: linear-gradient(to right, #0949a8, #8dbbda);
   border: 2px solid rgb(185, 180, 185);
   border-radius: 15px;
@@ -310,13 +297,13 @@ h2 {
 
 @media screen and (max-width: 768px) {
   
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
   }
 
 .menu-toggle {
