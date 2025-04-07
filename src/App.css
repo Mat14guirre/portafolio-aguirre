@@ -79,29 +79,8 @@ section {
   color: #bcc0bd;
   font-size: 25px;
   font-weight: 600;
-  background-color: #133d5f;
   padding: 5px;
   border-radius: 5px;
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid black; /* Simula el cursor */
-  width: 0;
-  animation: typing 3s steps(30, end) forwards, blinkCursor 0.2s infinite;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 30%;
-  }
-}
-
-@keyframes blinkCursor {
-  90% {
-    border-color: transparent;
-  }
 }
 
 .about-page {

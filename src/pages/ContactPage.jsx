@@ -1,6 +1,6 @@
 import React from "react";
 import { FaWhatsapp, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-import DownloadCV from "../components/DownloadCv.jsx";
+
 
 const ContactPage = () => {
   return (
@@ -55,7 +55,7 @@ const ContactPage = () => {
         >
           <FaLinkedin />
         </a>
-        <DownloadCV/>
+        
 
         
       </div>
