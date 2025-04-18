@@ -6,7 +6,7 @@ const ContactPage = () => {
   return (
     <section id="contact" className="contact-page">
       <h2>Contacto</h2>
-      <p>
+      <p className="contact-text">
         Si desea ponerse en contacto, no dude en enviarme un mensaje por
         WhatsApp, correo electrónico o a través de mis redes profesionales.
       </p>

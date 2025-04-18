@@ -1,7 +1,7 @@
 import React from "react";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiMongodb, SiJavascript } from "react-icons/si";
-import DownloadCV from "../components/DownloadCv.jsx";
+
 
 
 const AboutPage = () => {
@@ -66,7 +66,7 @@ const AboutPage = () => {
             <FaNodeJs className="icon node" title="Node.js" />
             <SiMongodb className="icon mongo" title="MongoDB" />
           </div>
-          <DownloadCV/>
+          
         </div>
       </div>
     </section>

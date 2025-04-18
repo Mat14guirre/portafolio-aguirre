@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DownloadCV from "../components/DownloadCv.jsx";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Estado para manejar la visibilidad del menú
@@ -11,6 +12,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
       <h1 className='name-navbar'>Matias Ezequiel Aguirre</h1>
+      <DownloadCV/>
         {/* Ícono del menú hamburguesa */}
         <div className="menu-toggle" onClick={toggleMenu}>
           <span className="bar"></span>
