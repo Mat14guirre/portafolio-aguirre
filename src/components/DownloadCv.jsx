@@ -1,6 +1,6 @@
 const DownloadCV = () => {
   return (
-    <a href="/MatiasAguirreCv-2025.pdf" download="CV-MatiasAguirre.pdf">
+    <a href="/Matias-Aguirre-2025(Dev).docx" download="Matias-Aguirre-2025(Dev).docx">
       <button className="btn-download">
         Descargar CV
       </button>
