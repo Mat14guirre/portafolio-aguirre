@@ -165,9 +165,9 @@
 /* === CONTACT === */
 .contact-icons {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 50px;
 }
 
 .icon {
