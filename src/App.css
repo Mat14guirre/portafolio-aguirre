@@ -326,7 +326,6 @@
   border: 4px solid #58a6ff;
   box-shadow: 0 0 25px rgba(88, 166, 255, 0.2);
   transition: transform 0.3s ease;
-  margin-right: 40px;
 }
 
 .fotoperfil:hover {
@@ -413,6 +412,8 @@
 
   .fotoperfil {
     margin-bottom: 20px;
+    width: 350px;
+  height: 350px;
   }
 
   .text-sobre-mi {
