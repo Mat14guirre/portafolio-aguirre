@@ -220,9 +220,10 @@
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  margin: 10px;
+  margin: 30px;
   padding: 0 12px;
   justify-items: center;
+  gap: 20px;
 }
 
 /* === CARD DE PROYECTO === */
@@ -233,7 +234,8 @@
   overflow: hidden;
   box-shadow: 0 0 20px rgba(88, 166, 255, 0.05);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  margin: 30px;
+  margin: 20px;
+  
 }
 
 .project-card:hover {
@@ -247,7 +249,7 @@
   display: block;
   border-radius: 12px;
   transition: opacity 0.3s ease;
-  margin: 10px;
+  
 }
 
 /* === OVERLAY DE BOTONES === */
