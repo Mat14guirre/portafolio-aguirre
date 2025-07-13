@@ -2,6 +2,16 @@ import React from 'react';
 
 const projects = [
   {
+    image: '/gestordegastos.jpg',
+    repoLink: 'https://github.com/Mat14guirre/gestor-gastos',
+    deployLink: 'https://tablero-de-gasto.netlify.app/',
+  },
+  {
+    image: '/MarianoReparaciones.png',
+    repoLink: 'https://github.com/Mat14guirre/MarianoReparaciones',
+    deployLink: 'https://mariano-reparaciones.vercel.app',
+  },
+  {
     image: '/fusion-cap.png',
     repoLink: 'https://github.com/Mat14guirre/Fusion-instalaciones',
     deployLink: 'https://fusion-instalaciones.vercel.app',
@@ -16,11 +26,7 @@ const projects = [
     repoLink: 'https://github.com/Mat14guirre/Catalinda-ind',
     deployLink: 'https://catalina-indumentaria.vercel.app',
   },
-  {
-    image: '/MarianoReparaciones.png',
-    repoLink: 'https://github.com/Mat14guirre/MarianoReparaciones',
-    deployLink: 'https://mariano-reparaciones.vercel.app',
-  },
+  
 ];
 
 const ProjectList = () => {
