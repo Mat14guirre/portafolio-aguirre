@@ -2,14 +2,19 @@ import React from 'react';
 
 const projects = [
   {
-    image: '/gestordegastos.jpg',
-    repoLink: 'https://github.com/Mat14guirre/gestor-gastos',
-    deployLink: 'https://tablero-de-gasto.netlify.app/',
+    image: '/verde-oliva.png',
+    repoLink: 'https://github.com/Mat14guirre/control-verdeoliva',
+    deployLink: 'https://control-verdeoliva.vercel.app/',
   },
   {
     image: '/MarianoReparaciones.png',
     repoLink: 'https://github.com/Mat14guirre/MarianoReparaciones',
     deployLink: 'https://mariano-reparaciones.vercel.app',
+  },
+  {
+    image: '/gestordegastos.jpg',
+    repoLink: 'https://github.com/Mat14guirre/gestor-gastos',
+    deployLink: 'https://tablero-de-gasto.netlify.app/',
   },
   {
     image: '/fusion-cap.png',
