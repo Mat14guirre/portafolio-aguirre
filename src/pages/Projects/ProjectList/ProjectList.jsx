@@ -20,17 +20,7 @@ const projects = [
     image: '/fusion-cap.png',
     repoLink: 'https://github.com/Mat14guirre/Fusion-instalaciones',
     deployLink: 'https://fusion-instalaciones.vercel.app',
-  },
-  {
-    image: '/mi-iphone-cap.png',
-    repoLink: 'https://github.com/Mat14guirre/mi-Iphone',
-    deployLink: 'https://mi-iphone.vercel.app',
-  },
-  {
-    image: '/catalina-cap.png',
-    repoLink: 'https://github.com/Mat14guirre/Catalinda-ind',
-    deployLink: 'https://catalina-indumentaria.vercel.app',
-  },
+  }
   
 ];
 
