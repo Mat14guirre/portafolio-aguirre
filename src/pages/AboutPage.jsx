@@ -7,8 +7,12 @@ const AboutPage = () => {
   return (
     <section id="about" className="about-page">
       <div className="about-content">
-        <img src="/matiaguirreperfil.jpg" alt="Matias" className="fotoperfil" />
-        
+        <img
+          src="/fotodeperfilprofesional.png"
+          alt="Matias"
+          className="fotoperfil"
+        />
+
         <div className="about-text">
           <h2>Sobre mí</h2>
           <p>
@@ -68,15 +72,8 @@ const AboutPage = () => {
             Me enfoco en buenas prácticas, escalabilidad y seguir aprendiendo
             constantemente. ¡Mirá mis proyectos para ver más!
           </p>
-          <div className="tech-icons">
-            <FaHtml5 className="icon html" title="HTML5" />
-            <FaCss3Alt className="icon css" title="CSS3" />
-            <SiJavascript className="icon js" title="JavaScript" />
-            <FaReact className="icon react" title="React" />
-            <FaNodeJs className="icon node" title="Node.js" />
-            <SiMongodb className="icon mongo" title="MongoDB" />
-            <DownloadCV />
-          </div>
+          <DownloadCV />
+          
         </div>
       </div>
     </section>

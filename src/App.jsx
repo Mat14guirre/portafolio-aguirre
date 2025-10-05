@@ -6,7 +6,7 @@ import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/Projects/ProjectsPage.jsx';
 import ContactPage from './pages/ContactPage';
 import ParticlesBackground from "./components/Particles.jsx";
-
+import Certificaciones from "./components/Certificaciones";
 
 function App() {
   return (
@@ -16,7 +16,9 @@ function App() {
       <HomePage />
       <AboutPage />
       <ProjectsPage />
+      <Certificaciones />
       <ContactPage />
+      
     </div>
   );
 }

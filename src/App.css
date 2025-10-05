@@ -219,7 +219,7 @@
 /* === CONTENEDOR PRINCIPAL === */
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(370px, 2fr));
   margin: 30px;
   padding: 0 12px;
   justify-items: center;
@@ -492,13 +492,13 @@
 }
 
 .home-page {
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 10px;
   color: #ffffff;
   background: transparent;
   position: relative;
@@ -557,5 +557,177 @@
 
   .title-home {
     font-size: 1.5rem;
+  }
+}
+
+/* ===========================
+   CARRUSEL DE ICONOS
+=========================== */
+.tech-icons {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 25px 0;
+  box-shadow: inset 0 3px 10px rgba(255, 255, 255, 0.05);
+}
+
+.tech-track {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(2rem, 4vw, 4rem);
+  animation: scroll-left var(--scroll-duration, 22s) linear infinite;
+  will-change: transform;
+  white-space: nowrap;
+  padding-left: 8px;
+}
+
+.icon {
+  font-size: clamp(2rem, 4vw, 3rem);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: default;
+  opacity: 0.9;
+}
+
+/* COLORES POR TECNOLOGÍA */
+.icon.html { color: #e44d26; }
+.icon.css { color: #264de4; }
+.icon.js { color: #f7df1e; }
+.icon.react { color: #61dafb; }
+.icon.node { color: #68a063; }
+.icon.mongo { color: #4db33d; }
+
+/* EFECTOS */
+.icon:hover {
+  transform: translateY(-6px) scale(1.2);
+  opacity: 1;
+}
+
+/* ANIMACIÓN SCROLL */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Pausa cuando el usuario pasa el mouse por encima */
+.tech-icons:hover .tech-track {
+  animation-play-state: paused;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .tech-track {
+    gap: 2.5rem;
+  }
+  .icon {
+    font-size: 2.2rem;
+  }
+  .home-page {
+    padding: 80px 15px 50px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .tech-icons {
+    padding: 18px 0;
+  }
+  .tech-track {
+    gap: 1.8rem;
+    animation-duration: 14s; /* un poco más rápido en mobile */
+  }
+  .icon {
+    font-size: 1.8rem;
+  }
+  .home-page {
+    padding: 70px 10px 40px;
+  }
+  .title-home {
+    font-size: 1.3rem;
+  }
+}
+
+/* Usuarios que prefieren menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .tech-track {
+    animation: none;
+  }
+}
+
+.cert-section {
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+  box-shadow: inset 0 3px 10px rgba(255, 255, 255, 0.05);
+}
+
+.cert-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.cert-icon {
+  color: #ffd700;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 320px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cert-card:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+.cert-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* INFO */
+.cert-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #61dafb;
+}
+
+.cert-info {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cert-section {
+    padding: 70px 15px;
+  }
+  .cert-card {
+    padding: 15px;
+  }
+  .cert-card h3 {
+    font-size: 1rem;
   }
 }
