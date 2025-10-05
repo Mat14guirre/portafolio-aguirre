@@ -2,6 +2,11 @@ import React from 'react';
 
 const projects = [
   {
+    image: '/djnata.png',
+    repoLink: 'https://github.com/Mat14guirre/DjNataEspinoza',
+    deployLink: 'https://dj-nata-espinoza.vercel.app/',
+  },
+  {
     image: '/verde-oliva.png',
     repoLink: 'https://github.com/Mat14guirre/control-verdeoliva',
     deployLink: 'https://control-verdeoliva.vercel.app/',

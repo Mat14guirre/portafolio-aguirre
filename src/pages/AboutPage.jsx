@@ -8,6 +8,7 @@ const AboutPage = () => {
     <section id="about" className="about-page">
       <div className="about-content">
         <img src="/matiaguirreperfil.jpg" alt="Matias" className="fotoperfil" />
+        
         <div className="about-text">
           <h2>Sobre mí</h2>
           <p>
