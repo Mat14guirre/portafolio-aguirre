@@ -217,9 +217,10 @@
 }
 
 /* === CONTENEDOR PRINCIPAL === */
+
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ← más flexible */
   margin: 30px;
   padding: 0 12px;
   justify-items: center;
@@ -291,7 +292,14 @@
 /* === RESPONSIVE === */
 @media (max-width: 480px) {
   .projects-container {
-    gap: 16px;
+    grid-template-columns: 1fr; /* ← UNA COLUMNA en mobile */
+    margin: 10px;
+    padding: 0 8px;
+    gap: 14px;
+  }
+
+  .project-card {
+    margin: 0; /* quita margen que rompía el layout en pantallas chicas */
   }
 
   .project-image {
